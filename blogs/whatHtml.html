@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="blogs.css">
+</head>
+<body>
+    <header class="text-center p-lg-3 bg-primary p-2">
+        <h1>About HTML</h1>
+    </header>
+    <main>
+        <div class="container-fluid m-lg-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 shadow p-4 m-lg-0 m-2">
+                        <p>
+                          The full form of Html is <strong>hypertext markup language.</strong> This is a language for creating website templates.
+                          You can use it to create the layout of a website. There are various types of sacrifices in this. Sacrifice is a special character written inside <>. 
+                          Each tag has its own function and characteristics.
+                          They tell the browser what to do and what the browser displays.
+                        </p>
+                        <img src="blogsimg/htmlpg.jpg" alt="" width="290px" height="300px">
+                    </div>
+
+                    <div class="col-lg-6 shadow p-4 m-lg-0 m-2 text-center">
+                       <p class="text-start">
+                          There are mainly 2 types of tags :<br>
+                          1. Paired tag This is both an opening and a closing.<br>
+                          2. Self closing tag. <br><br>
+                          We can read some of the main tags in categories like this.
+                        </p> 
+                        <img src="blogsimg/tags.jpg" alt="" width=" 370px" height="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center mt-lg-5 p-lg-5 p-3">
+       <h3><i class="fa-regular fa-copyright"></i>2025 Biswas Parajuli</h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+
+<script>
+// Disable Right Click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // F12
+  if (e.keyCode === 123) e.preventDefault();
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+
+  // Ctrl + Shift + I / J / C
+  if (e.ctrlKey && e.shiftKey &&
+     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+
+  // Ctrl + C / A / X / P
+  if (e.ctrlKey &&
+     (e.key === 'c' || e.key === 'a' ||
+      e.key === 'x' || e.key === 'p')) e.preventDefault();
+});
+
+// Disable selection + copy events
+document.onselectstart = function() { return false; };
+document.oncopy = function() { return false; };
+document.oncut = function() { return false; };
+</script>
+</body>
+</html>

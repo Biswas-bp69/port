@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  }
+header h1{
+  color: white;
+  }
+main {
+  flex: 1;
+  }
+.blogsTopic {
+  font-weight: 700;
+  font-size: 20px;
+  }
+footer{
+  background: #01014a;
+  color: white;
+  }
+header h1{
+    font-weight: 700;
+    color: white;
+  }
+p {
+    text-align:justify;
+}  
+@media only screen and (min-width:200px) and (max-width:575px){
+
+  .blogText h3{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .blogText h5{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .blogText{
+    border-radius: 5px;
+  } 
+}
+

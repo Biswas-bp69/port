@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Mistake Biswas blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="bg-primary p-2 text-center">
+    <h1>Beginner mistakes</h1>
+  </header>
+
+  <main class="m-lg-5">
+    <p class="p-3">5 important mistakes to avoid when creating a website:</p>
+    <div class="blogText shadow p-3 m-3">
+      <h3> 1. Not making it mobile responsive</h3>
+      <p> 
+        Many beginners do not make their websites mobile responsive. 
+        This affects their traffic. 80%. Traffic comes from mobile. 
+        If it does not look good on mobile, traffic decreases.
+      </p>
+    </div>
+
+    <div class="blogText shadow p-3  m-3">
+      <h3> 2. Repeated code</h3>
+      <p> 
+        Creating multiple files and writing unnecessary code. 
+        Common code that is used in many places should be placed in a separate CSS file and linked to it. 
+        Doing this reduces the unnecessary length of the code.
+      </p>
+    </div>
+
+    <div class="blogText shadow p-3 m-3">
+      <h3> 3. Ruining the heading structure (incorrect use of h1, h2, etc.)</h3>
+      <p>
+        Beginners make to bold text or use more than 1 h1 tag in the same file. 
+        Doing this makes it difficult for Google to understand the structure later.
+      </p>
+    </div>
+
+    <div class="blogText shadow p-3 m-3">
+      <h3> 4.Do not reduce images size. </h3>
+      <p>
+        Beginners tend to put 2-3 mb images directly on the website.
+        This slows down the website, reduces Google speed and increases the bounce rate. 
+        Therefore, when placing images, always keep the size between 100 and 200.
+      </p>
+    </div>
+
+    <div class="blogText shadow p-3 m-3">
+      <h3> 5. SEO Meta tag not added</h3>
+      <p> 
+        Beginners create websites but do not add SEO meta tags. 
+        That is why it is not SEO friendly. For this, use Title, Description, keywords, 
+        open graph, favicon.
+      </p>
+    </div>
+
+    <div class="blogText shadow p-3 m-3">
+      <h3> Other common mistakes: </h3>
+      <p> Using too many colors.</p>
+      <p> Not dividing the CSS file.</p>
+      <p> Using too many colors.</p>
+      <p> Not writing clean code.</p>
+      <p> Writing too many inline CSS.</p>
+      <p> Contact form not working etc. etc.</p>
+    </div>
+  </main>
+
+  <footer class="text-center mt-lg-5 p-lg-5 p-3">
+    <h3><i class="fa-regular fa-copyright"></i>2025 Biswas Parajuli</h3>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <style>
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+
+<script>
+// Disable Right Click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // F12
+  if (e.keyCode === 123) e.preventDefault();
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+
+  // Ctrl + Shift + I / J / C
+  if (e.ctrlKey && e.shiftKey &&
+     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+
+  // Ctrl + C / A / X / P
+  if (e.ctrlKey &&
+     (e.key === 'c' || e.key === 'a' ||
+      e.key === 'x' || e.key === 'p')) e.preventDefault();
+});
+
+// Disable selection + copy events
+document.onselectstart = function() { return false; };
+document.oncopy = function() { return false; };
+document.oncut = function() { return false; };
+</script>
+</body>
+</html>
