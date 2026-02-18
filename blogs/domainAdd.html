@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github use</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="bg-primary p-2 text-center">
+    <h1>How to Active and use domain</h1>
+  </header>
+  <main class="m-lg-5">
+    <p class="p-3">Below is how to use Github and put a project on Github. </p>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="blogText shadow p-3 m-3">
+          <p>यदि domain नाम आएको हो र यसलाई रेपो मा राख्ने भए: </p>
+          <h3> 1. github page enable गर्ने:</h3>
+          <ul>
+            <li> Open your github Repo</li>
+            <li> Go To setting and page</li>
+            <li> under score: <br>branch:main <br> Folder: /root</li>
+            <li>click Save</li>
+            <p> github will generate a template link : "https://username.github.io/repo-name" </p> 
+          </ul>
+        </div>
+        <div class="blogText shadow p-3  m-3">
+          <h3> 2.Add Custom Domain in GitHub</h3>
+          <ul>
+            <li>go to github repo </li>
+            <li>Go to setting => Page</li>
+            <li>In Custom Domain: yourDomain.com.np</li>
+            <li>Click Save</li>
+            <strong><p>Note: It May show an error until DNS is configured this is normal.</p></strong>
+          </ul>
+        </div>
+        <div class="blogText shadow p-3 m-3">
+          <h3> 3. Setup DNS in Claudfare(Most Imp)</h3>
+          <ul>
+            <li>Open Claudfare Dashboard(you do login)</li>
+            <li>Select Your Domain</li>
+            <li>go to DNS => Record</li>
+            <li>Add the Following Records:</li>
+            <li>
+              <span>
+                <li><strong>For CNAME Record </strong><br> type:CNAME <br> Name: www <br> Target: username.github.io <br> Proxy Status: DNS only (Gray cloud)</li>
+                <li><strong>A Record (for root domain)</strong><br>
+                  Type: A <br>
+                  Name: @ <br>
+                  TPv4: 185.199.108.153 <br>
+                  proxy: DNS Only
+                </li>
+                <li><strong>A Record (for root domain)</strong><br>
+                  Type: A <br>
+                  Name: @ <br>
+                  TPv4: 185.199.109.153 <br>
+                  proxy: DNS Only
+                </li>
+                <li><strong>A Record (for root domain)</strong><br>
+                  Type: A <br>
+                  Name: @ <br>
+                  TPv4: 185.199.110.153 <br>
+                  proxy: DNS Only
+                </li>
+                <li><strong>A Record (for root domain)</strong><br>
+                  Type: A <br>
+                  Name: @ <br>
+                  TPv4: 185.199.111.153 <br>
+                  proxy: DNS Only
+                </li>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="blogText shadow p-3 m-3">
+          <h3> 4. Create CNAME file in your repo</h3>
+          <ul>
+            <li>Click Add file => Create new file</li>
+            <li> File name: <br>
+              <span class="p-4 text-danger ">CNAME</span>
+            </li>
+            <li> File content<br>
+              <span class="p-4 text-danger">your domain ( eg: example.com.np ) </span>
+            </li>
+            <li>Commit the file</li>
+          </ul>
+          <h5>Enable HTTPS</h5>
+          <ul>
+            <li>in github page <br>( Turn On Enforce HTTPS) </li>
+            <li>In Cloudfare: <br>(SSL/TLS => set mode to Full) </li>
+            <li>wait 5 min  to Up to 24 hrs then open https://.......com.np`</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center mt-lg-5 p-lg-5 p-3">
+    <h3><i class="fa-regular fa-copyright"></i>2025 Biswas Parajuli</h3>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+</html>
