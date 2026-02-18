@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Privacy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+  <div id="header"></div>
+  <main>
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="text-center rulesHeader ">Our Privacy and Policy</h1>
+        <p class="p-3 pb-1">
+          This privacy policy is designed to inform you about how your data is collected, used,
+          and protected when you use our website 
+          <b>biswasparajuli69.com.np.</b>
+        </p>
+        <div class="rulesArea p-4 m-lg-5 p-lg-5 shadow m-3">
+          <div class="rulesTextBox mb-2 shadow p-2">
+            1. Collection Information : We do not collect your data unless you voluntarily provide it.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2">
+            2.The website may use cookies : You can disable cookies from your browser if you wish.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2">
+            3. We use tools like Google Analytics which only collect non-personal information such as browser type, time, etc.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2">
+            4. Third-party advertising services such as Google AdSense may use cookies to serve personalized ads. You can turn off personalized ads if you wish. 
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2">
+            5. We do not sell or share any data with third parties.Provides essential information to keep the information received secure 
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2">
+            6. The website may contain links to other sites. We are not responsible for the policies and content of those linked sites.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2">
+            7. We may change the policy as necessary. Your continued use of the website will be deemed acceptance of the policy.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+        <h2 class="text-center rulesSecondHeader">Terms And Conditions</h2>
+        <p class="p-3 pb-1 mb-lg-5">
+          The following things should be kept in mind when using our... website: 
+        </p>
+        <div class="rulesArea p-4 shadow m-lg-5">
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            1. The website must be used legally.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            2. Any act of misusing, hacking, or damaging the website is prohibited.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            3. All content on the website is for general information only.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            4. Information may contain errors. We do not guarantee complete accuracy.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            5. We do not take responsibility for links to external websites.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            6. No material may be collected or republished without permission.
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            7. Rules may change at any time as necessary. 
+          </div>
+          <div class="rulesTextBox mb-2 shadow p-2 mb-lg-3 p-lg-3">
+            8. If you do not agree to the terms and conditions, you may not use the website.If you do not agree to the terms and conditions, you may not use the website.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" mt-5  d-flex p-5  m-5 rulsContactBtn">
+      <div class=" shadow p-4 text-center">
+        <p> If any question ......</p>
+        <button class=" p-2 rulesContactText ">Contact Us : javascript@gmail.com</button>
+      </div>
+    </div>
+</main>
+                          
+<div id="footer"></div>
+   <script>
+    fetch('header.html')
+    .then(Response => Response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
+    fetch('footer.html')
+    .then(Response => Response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+   </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+    <style>
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+
+<script>
+// Disable Right Click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // F12
+  if (e.keyCode === 123) e.preventDefault();
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+
+  // Ctrl + Shift + I / J / C
+  if (e.ctrlKey && e.shiftKey &&
+     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+
+  // Ctrl + C / A / X / P
+  if (e.ctrlKey &&
+     (e.key === 'c' || e.key === 'a' ||
+      e.key === 'x' || e.key === 'p')) e.preventDefault();
+});
+
+// Disable selection + copy events
+document.onselectstart = function() { return false; };
+document.oncopy = function() { return false; };
+document.oncut = function() { return false; };
+</script>
+</body>
+</html>

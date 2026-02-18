@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+  <div class="container quiz-container">
+    <nav class="quizHeader">
+      <h1>📝 Online Quiz</h1>
+      <div class="header-right">
+        <div id="timer">⏱️ 30</div>
+        <button onclick="logout()" class="logout-btn">🚪 Logout</button>
+      </div>
+    </nav>
+
+    <!-- Category Selector -->
+    <div id="categorySelector" class="quizCenter-box">
+      <h2>Select Quiz Category</h2>
+      <select id="categorySelect"></select>
+      <button onclick="startQuiz()" class="primary-btn">🎮 Start Quiz</button>
+    </div>
+
+    <!-- Quiz Area -->
+     <div id="media" class="media-section"></div>
+
+    <div id="quizArea" class="quiz-box" style="display: none;">
+      <div id="questionContainer">
+        <h2 id="questionNumber"></h2>
+        <p id="questionText"></p>
+        <img id="questionImage" src="" alt="" class="question-img" />
+        <div id="optionsContainer" class="options-grid"></div>
+      </div>
+
+      <div class="navigation quizPreviusNextBtn">
+        <button onclick="prevQuestion()" class="nav-btn">⏪ Previous</button>
+        <button onclick="nextQuestion()" class="nav-btn">Next ⏩</button>
+      </div>
+    </div>
+  </div>
+</main>
+    <div id="footer"></div>
+   <script>
+    fetch('header.html')
+    .then(Response => Response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
+    fetch('footer.html')
+    .then(Response => Response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+
+
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <script src="quizScript.js"></script>
+
+  <style>
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+
+<script>
+// Disable Right Click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // F12
+  if (e.keyCode === 123) e.preventDefault();
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+
+  // Ctrl + Shift + I / J / C
+  if (e.ctrlKey && e.shiftKey &&
+     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+
+  // Ctrl + C / A / X / P
+  if (e.ctrlKey &&
+     (e.key === 'c' || e.key === 'a' ||
+      e.key === 'x' || e.key === 'p')) e.preventDefault();
+});
+
+// Disable selection + copy events
+document.onselectstart = function() { return false; };
+document.oncopy = function() { return false; };
+document.oncut = function() { return false; };
+</script>
+</body>
+</html>

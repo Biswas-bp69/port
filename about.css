@@ -1,0 +1,24 @@
+.myImage {
+}
+
+.suggestText{
+    color: white;
+}
+.rulsContactBtn button{
+    border-radius: 10px;
+    background: linear-gradient(to right,#0ACEFE,#2699F8);
+}
+
+
+@media only screen and (min-width:200px) and (max-width:575px){
+    .myImage{
+        width: 200px;
+        height: 215px;
+        border-radius: 50%;
+    }
+    .myDetailsText{
+        padding: 20px;
+        text-align: justify;
+    }
+
+}

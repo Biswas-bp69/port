@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="quizTeacher.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+    <h2 class="text-center  catagoryTopic">Manage Categories</h2>
+<div id="categoryManagerContainer" style="margin-bottom: 20px;" class="m-lg-5 p-lg-4"></div>
+
+  <div class="container ">
+    <header>
+      <h1>🎓 Teacher Dashboard</h1>
+      <button onclick="logout()" class="logout-btn">🚪 Logout</button>
+    </header>
+
+    <section class="add-section">
+      <h2>Add New Quiz Question</h2>
+      <form id="questionsForm">
+        <div id="questionInputsContainer"></div>
+        <button type="button" class="add-btn" onclick="addQuestionBlock()">➕ Add Another Question</button>
+        <button type="submit" class="save-btn">💾 Save Questions</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <section class="list-section">
+      <h2>📂 All Quiz Questions by Category</h2>
+      <div id="questionList"></div>
+    </section>
+  </div>
+
+  <script src="quizTeacher.js"></script>
+
+
+  <style>
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+
+<script>
+// Disable Right Click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // F12
+  if (e.keyCode === 123) e.preventDefault();
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+
+  // Ctrl + Shift + I / J / C
+  if (e.ctrlKey && e.shiftKey &&
+     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+
+  // Ctrl + C / A / X / P
+  if (e.ctrlKey &&
+     (e.key === 'c' || e.key === 'a' ||
+      e.key === 'x' || e.key === 'p')) e.preventDefault();
+});
+
+// Disable selection + copy events
+document.onselectstart = function() { return false; };
+document.oncopy = function() { return false; };
+document.oncut = function() { return false; };
+</script>
+</body>
+</html>

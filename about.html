@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Biswas</title>
+    <meta name="Description" content="Learn our website. we provide easy, relaible and beginner-friendly tutorials on coding. Your skills and knowledge are increaging from this website. ">
+    <meta name="keywords" content="about our website, who we are, coding education platform, web deveploment help, learn code online, tech coding mission ">
+    <!-- og tag (social media ceo) -->
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:Description" content=" Learn our website. we provide easy, relaible and beginner-friendly tutorials on coding. Your skills and knowledge are increaging from this website. ">
+    <meta property="og:url" content="https://biswasparajuli69.com.np/about.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+    <div id="header"></div>
+<main>
+    <div class="container-fluid mt-5 mt-lg-2 ">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6  text-center">
+                    <img src="images/my-pic.jpg" alt="Biswas image" width="450px" height="500px" class="myImage">
+                </div>
+                <div class="col-lg-6  myDetailsText shadow-lg p-lg-5 pt-5 ">
+                    My name is <strong>Biswas Parajuli</strong>. I am from Nepal. I am a professional website developer. I love creating modern, clean, and user-friendly websites and sharing my coding knowledge. <b class="bg-primary p-1 suggestText">I work primarily with a focus on frontend, responsive design, and user experience (UX).</b> My goal is for everyone to have basic knowledge of coding in today's world.
+                    This website is specifically for those who want to code or are coding.<br><br>
+
+                    My journey began with a curiosity about how a website is built. I learned how to build a website by watching various social media, YouTube tutorials, etc. I was wondering whether I should give priority to templates or create them through coding. After thinking about it for a few days, I decided that coding would be best for me. Templates have limited features, but if you learn coding well, you can make it however you want, so I chose coding.Today, I have been able to turn various basic ideas into websites.
+                    In my opinion, a good website is not just about looking good. In my opinion, when the <b class="bg-warning p-1">code is clean, SEO friendly, responsive, and speed optimized</b>, then a good website is created. <br><br>
+
+                    I also enjoy extracurricular activities along with coding. I really enjoy writing and reading literature, such as stories and poetry.  
+                    Currently I am working on various useful projects which will make me a better portfolio and a better web maker.
+                    <br><b class="bg-primary p-1 suggestText">If you would like to collaborate with me on a project or have any questions, you can contact me.</b>
+                    <div class=" mt-5 text-center p-3 shadow m-2 rulsContactBtn">
+                        <button class=" p-2 rulesContactText ">Contact Us : javascript@gmail.com</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <div id="footer"></div>
+   <script>
+    fetch('header.html')
+    .then(Response => Response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
+    fetch('footer.html')
+    .then(Response => Response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+
+
+   </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <style>
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+
+<script>
+// Disable Right Click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // F12
+  if (e.keyCode === 123) e.preventDefault();
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+
+  // Ctrl + Shift + I / J / C
+  if (e.ctrlKey && e.shiftKey &&
+     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+
+  // Ctrl + C / A / X / P
+  if (e.ctrlKey &&
+     (e.key === 'c' || e.key === 'a' ||
+      e.key === 'x' || e.key === 'p')) e.preventDefault();
+});
+
+// Disable selection + copy events
+document.onselectstart = function() { return false; };
+document.oncopy = function() { return false; };
+document.oncut = function() { return false; };
+</script>
+</body>
+</html>
