@@ -1,133 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biswas Blogs</title>
-    <meta name="Description" content="Read the latest blogs on coding, Technology and Website development. Find practical tutorial, tips and helpful guides for beginner to advance learners. ">
-    <meta name="keywords" content="coding blogs, web deveploment blogs, SEO articles, Technology update, beginner coding learn, coding guid, beginner tutorial, coding tutorial ">
+    <meta name="Description"
+        content="Read the latest blogs on coding, Technology and Website development. Find practical tutorial, tips and helpful guides for beginner to advance learners. ">
+    <meta name="keywords"
+        content="coding blogs, web deveploment blogs, SEO articles, Technology update, beginner coding learn, coding guid, beginner tutorial, coding tutorial ">
     <!-- og tag (social media ceo) -->
     <meta property="og:title" content="Portfolio">
-    <meta property="og:Description" content=" Read the latest blogs on coding, Technology and Website development. Find practical tutorial, tips and helpful guides for beginner to advance learners.  ">
+    <meta property="og:Description"
+        content=" Read the latest blogs on coding, Technology and Website development. Find practical tutorial, tips and helpful guides for beginner to advance learners.  ">
     <meta property="og:url" content="https://biswasparajuli69.com.np/about.html">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
-            }
+        }
+
         body {
             display: flex;
             flex-direction: column;
-            }
-        h1{
+        }
+
+        h1 {
             color: rgb(4, 0, 128);
             margin-top: 100px;
             text-align: center;
         }
-        .blogsTopic{
+
+        .blogsTopic {
             border-radius: 10px;
         }
-        h1 u{
+
+        h1 u {
             font-weight: 700;
         }
+
         main {
             margin: 150px;
-            flex: 1; 
-            }
-            .blogsTopic{
-                font-weight: 700;
-                font-size: 20px;
-            }
-        main a{
+            flex: 1;
+        }
+
+        .blogsTopic {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        main a {
             text-decoration: none;
         }
-            
 
-        @media only screen and (min-width:200px) and (max-width:575px){
-            .blogsTopic{
+
+        @media only screen and (min-width:200px) and (max-width:575px) {
+            .blogsTopic {
                 font-size: 18px;
                 font-weight: 500;
 
             }
+
             main {
-            margin: 180px 10px 10px 10px;
-            
+                margin: 180px 10px 10px 10px;
+
             }
 
         }
-        
     </style>
 </head>
+
 <body>
 
     <div id="header"></div>
     <main class="p-lg-5 p-4   shadow ">
         <h1 class="mb-lg-5 mb-3 mb-3"><u>Biswas Blogs</u></h1>
-        <a href="blogs/codingimportant.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">Importants of coding in 2026.</div></a>
-        <a href="blogs/startwebcode.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">How to start building a website with code.</div></a>
-        <a href="blogs/beginnermstk.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">Beginners mistakes.</div></a>
-        <a href="blogs/whatHtml.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">What is Html ?</div></a>
-        <a href="blogs/whatCss.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">What is Css ?</div></a>
-        <a href="blogs/whatJs.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3"> What is js ?</div></a>
-        <a href="blogs/githubUse.html"><div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">How to use github ?</div></a> 
+        <a href="blogs/codingimportant.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">Importants of coding in 2026.</div>
+        </a>
+        <a href="blogs/startwebcode.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">How to start building a website with code.</div>
+        </a>
+        <a href="blogs/beginnermstk.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">Beginners mistakes.</div>
+        </a>
+        <a href="blogs/whatHtml.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">What is Html ?</div>
+        </a>
+        <a href="blogs/whatCss.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">What is Css ?</div>
+        </a>
+        <a href="blogs/whatJs.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3"> What is js ?</div>
+        </a>
+        <a href="blogs/githubUse.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">How to use github ?</div>
+        </a>
+        <a href="blogs/domainAdd.html">
+            <div class="blogsTopic shadow p-lg-3 m-lg-3 p-3 m-3">How to add domain ?</div>
+        </a>
     </main>
 
     <div id="footer"></div>
     <script>
         fetch('header.html')
-        .then(Response => Response.text())
-        .then(data => document.getElementById('header').innerHTML = data);
+            .then(Response => Response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
         fetch('footer.html')
-        .then(Response => Response.text())
-        .then(data => document.getElementById('footer').innerHTML = data);
+            .then(Response => Response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
     </script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
 
 
     <style>
-/* Disable text selection */
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-</style>
+        /* Disable text selection */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
 
-<script>
-// Disable Right Click
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
+    <script>
+        // Disable Right Click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
 
-// Disable Keyboard shortcuts
-document.addEventListener('keydown', function(e) {
-  // F12
-  if (e.keyCode === 123) e.preventDefault();
+        // Disable Keyboard shortcuts
+        document.addEventListener('keydown', function (e) {
+            // F12
+            if (e.keyCode === 123) e.preventDefault();
 
-  // Ctrl + U
-  if (e.ctrlKey && e.key === 'u') e.preventDefault();
+            // Ctrl + U
+            if (e.ctrlKey && e.key === 'u') e.preventDefault();
 
-  // Ctrl + Shift + I / J / C
-  if (e.ctrlKey && e.shiftKey &&
-     (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
+            // Ctrl + Shift + I / J / C
+            if (e.ctrlKey && e.shiftKey &&
+                (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
 
-  // Ctrl + C / A / X / P
-  if (e.ctrlKey &&
-     (e.key === 'c' || e.key === 'a' ||
-      e.key === 'x' || e.key === 'p')) e.preventDefault();
-});
+            // Ctrl + C / A / X / P
+            if (e.ctrlKey &&
+                (e.key === 'c' || e.key === 'a' ||
+                    e.key === 'x' || e.key === 'p')) e.preventDefault();
+        });
 
-// Disable selection + copy events
-document.onselectstart = function() { return false; };
-document.oncopy = function() { return false; };
-document.oncut = function() { return false; };
-</script>
+        // Disable selection + copy events
+        document.onselectstart = function () { return false; };
+        document.oncopy = function () { return false; };
+        document.oncut = function () { return false; };
+    </script>
 </body>
+
 </html>
